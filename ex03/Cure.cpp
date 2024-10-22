@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:09:59 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/22 14:10:41 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/10/22 16:45:34 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ Cure::~Cure()
 
 Cure &Cure::operator=(Cure const &other)
 {
-    *this = other;
     std::cout << "Cure Assignment Operator Called" << std::endl;
+    if (this != &other)
+        this->_type = other._type;
     return (*this);
 }
 

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.hpp                                       :+:      :+:    :+:   */
+/*   Amateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:31:17 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/22 14:31:19 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/10/22 16:44:40 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 class AMateria
 {
-    private:
+    protected:
         std::string	_type;
     public:
         AMateria(std::string const &type);

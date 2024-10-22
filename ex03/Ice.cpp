@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:09:33 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/22 14:10:50 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/10/22 14:54:05 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ Ice::~Ice()
 
 Ice &Ice::operator=(Ice const &other)
 {
-    *this = other;
     std::cout << "Ice Assignment Operator Called" << std::endl;
+    if (this != &other)
+        this->_type = other._type;
     return (*this);
 }
 

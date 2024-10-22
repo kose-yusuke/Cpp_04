@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 14:34:22 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/22 10:47:43 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/10/22 14:41:29 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string>
 #include <iostream>
 #include "ICharacter.hpp"
+#include "AMateria.hpp"
 
 class Character: public ICharacter
 {
