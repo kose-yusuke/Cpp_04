@@ -1,13 +1,13 @@
 NAME     = a.out
-CC      = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 
+CXX      = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 
 SRCS     = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJS     = $(SRCS:.cpp=.o)
 INCLUDES	= -I .
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(INCLUDES) -o $(NAME) $(OBJS)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
