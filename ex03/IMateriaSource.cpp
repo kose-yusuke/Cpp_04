@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 14:44:46 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/22 11:23:51 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/11/24 17:14:08 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ IMateriaSource::IMateriaSource(IMateriaSource const &other)
 
 IMateriaSource const &IMateriaSource::operator=(IMateriaSource const &other)
 {
-	*this = other;
+	if (this != &other)
+		*this = other;
 	std::cout << "IMateriaSource Assignment Operator Called" << std::endl;
 	return (*this);
 }

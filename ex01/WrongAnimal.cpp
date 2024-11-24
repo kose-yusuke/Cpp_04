@@ -20,6 +20,7 @@ WrongAnimal::WrongAnimal():_type("default")
 WrongAnimal::WrongAnimal(const WrongAnimal &other)
 {
     std::cout << "Copy Wrong WrongAnimal constructor called" << std::endl;
+    *this = other;
 }
 
 WrongAnimal::~WrongAnimal()

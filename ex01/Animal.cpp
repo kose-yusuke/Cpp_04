@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:27:13 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/17 11:23:04 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/11/09 13:07:45 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ Animal::Animal():_type("default")
 Animal::Animal(const Animal &other)
 {
     std::cout << "Copy constructor called" << std::endl;
+    *this = other;
 }
 
 Animal::~Animal()

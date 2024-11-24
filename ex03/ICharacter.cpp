@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:20:45 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/10/22 11:30:05 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/11/24 17:13:28 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ ICharacter::ICharacter(ICharacter const &other)
 
 ICharacter const	&ICharacter::operator=(ICharacter const &other)
 {
-	*this = other;
+	(void)other;
 	std::cout << "ICharacter Assignment Operator Called" << std::endl;
 	return (*this);
 }
