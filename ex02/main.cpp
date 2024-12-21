@@ -16,13 +16,6 @@
 #include "Cat.hpp"
 #include "WrongCat.hpp"
 #include "Brain.hpp"
-#include <libc.h>
-
-__attribute__((destructor))
-static void destructor() {
-	system("leaks -q a.out");
-}
-
 
 #define ANIMAL_NUM 20
 

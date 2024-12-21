@@ -16,13 +16,6 @@
 #include "Cat.hpp"
 #include "WrongCat.hpp"
 #include "Brain.hpp"
-#include <libc.h>
-
-__attribute__((destructor))
-static void destructor() {
-	system("leaks -q a.out");
-}
-
 
 #define ANIMAL_NUM 20
 
@@ -56,6 +49,5 @@ int main()
     // //shallow copyだと, originalの内容も書き変わる
     std::cout << "Original Cat's first idea: " << originalCat.getBrain()->getIdeas()[0] << std::endl;
     std::cout << "Copied Cat's first idea: " << copiedCat.getBrain()->getIdeas()[0] << std::endl;
-
 }
 

@@ -20,6 +20,7 @@ Animal::Animal():_type("default")
 Animal::Animal(const Animal &other)
 {
     std::cout << "Copy constructor called" << std::endl;
+    *this = other;
 }
 
 Animal::~Animal()

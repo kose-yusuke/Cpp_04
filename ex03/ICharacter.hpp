@@ -22,9 +22,6 @@ class AMateria;
 class ICharacter
 {
     public:
-        ICharacter();
-		ICharacter(ICharacter const &other);
-        ICharacter const &operator=(ICharacter const &other);
         virtual ~ICharacter() {}
         virtual std::string const & getName() const = 0;
         virtual void equip(AMateria* m) = 0;

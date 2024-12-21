@@ -14,23 +14,23 @@
 
 Brain::Brain()
 {
-    std::cout << "Default constructor called" << std::endl;
+    std::cout << "Brain Default constructor called" << std::endl;
 }
 
 Brain::Brain(const Brain &other)
 {
     for (int i=0; i < 100; i++)
         this->_ideas[i] = other._ideas[i];
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << "Brain Copy constructor called" << std::endl;
 }
 
 Brain::~Brain()
 {
-    std::cout << "Destructor called" << std::endl;
+    std::cout << "Brain Destructor called" << std::endl;
 }
 
 Brain &Brain::operator=(const Brain &other) {
-    std::cout << "Copy assignment operator called" << std::endl;
+    std::cout << "Brain Copy assignment operator called" << std::endl;
     if (this == &other)
         return *this;
     for (int i=0; i<100;i++)

@@ -32,7 +32,7 @@ Character::~Character()
 	std::cout << "Character destroyed" << std::endl;
 }
 
-Character::Character(Character const &other): ICharacter(other), _inventory()
+Character::Character(Character const &other)
 {
 	this->_name = other._name;
 	for (int i = 0; i < 4; i++)
@@ -43,9 +43,15 @@ Character::Character(Character const &other): ICharacter(other), _inventory()
 	std::cout << "Character copied" << std::endl;
 }
 
-Character const	&Character::operator=(const Character &other)
+Character &Character::operator=(const Character &other)
 {
 	this->_name = other._name;
+	for (int i = 0; i < 4; i++)
+	{
+		if (other._inventory[i])
+			this->_inventory[i] = other._inventory[i];
+	}
+	std::cout << "Character Assignment Operator Called" << std::endl;
 	return (*this);
 }
 

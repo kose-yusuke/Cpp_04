@@ -1,7 +1,7 @@
 NAME     = a.out
 CXX      = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
-SRCS     = main.cpp AMateria.cpp Character.cpp ICharacter.cpp IMateriaSource.cpp MateriaSource.cpp Ice.cpp Cure.cpp
+SRCS     = main.cpp AMateria.cpp Character.cpp MateriaSource.cpp Ice.cpp Cure.cpp
 OBJS     = $(SRCS:.cpp=.o)
 INCLUDES	= -I .
 all: $(NAME)

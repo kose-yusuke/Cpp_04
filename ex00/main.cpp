@@ -27,11 +27,18 @@ int main()
     j->makeSound();
     meta->makeSound();
 
+    delete meta;
+    delete j;
+    delete i;
+
     const WrongAnimal* metawrong = new WrongAnimal();
-    const WrongCat* h = new WrongCat();
+    const WrongAnimal* h = new WrongCat();
     std::cout << h->getType() << " " << std::endl;
     h->makeSound();
     metawrong->makeSound();
+
+    delete metawrong;
+    delete h;
     
     return 0;
 }

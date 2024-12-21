@@ -23,7 +23,7 @@ AMateria::AMateria(AMateria const &other)
 	std::cout << "AMateria copied" << std::endl;
 }
 
-AMateria const	&AMateria::operator=(AMateria const &other)
+AMateria &AMateria::operator=(AMateria const &other)
 {
 	this->_type = other._type;
 	std::cout << "AMateria Assignment Operator Called" << std::endl;
